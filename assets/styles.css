@@ -32,6 +32,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 #welcome-section {
@@ -41,10 +42,6 @@ body {
     background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     color: white;
 }
 
@@ -55,20 +52,11 @@ body {
 
 .title {
     font-size: 3em;
+    flex: 1 0 100%;
 }
 
 #name {
     margin-top: 10px;
-}
-
-#about {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#about-title {
-    flex: 0 1 100%;
 }
 
 #about-blurb {
@@ -100,6 +88,68 @@ body {
     text-align: left;
 }
 
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+#uci-img-container {
+    flex-basis: 100%;
+}
+
+#uci1-img {
+    width: 200px;
+    height: auto
+}
+
+.school-header {
+    font-size: 1.7em;
+    margin: 13.5px 0;
+}
+
+.school-detail {
+    font-size: 1.1em;
+    margin: 13.5px 0;
+}
+
+.project-grid {
+    flex-basis: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    justify-items: center;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+}
+
+.project-tile {
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 275px;
+    width: 325px;
+    text-decoration: none;
+    color: white;
+    transition: transform .5s;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+}
+
+.project-name {
+    background-color: gray;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.project-img {
+    height: 80%;
+    width: 100%;
+    vertical-align: bottom;
+}
+
 @media (max-width: 1140px) {
     #about-description {
         line-height: 1.5;
@@ -119,6 +169,11 @@ body {
     #about-description {
         margin: 0;
         margin-top: 15px;
+    }
+
+    .project-grid {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, minmax(300px, 1fr));
     }
 }
 

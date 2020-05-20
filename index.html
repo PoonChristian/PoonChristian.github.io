@@ -11,10 +11,10 @@
     <nav id="navbar">
         <ul>
             <li><a href="#welcome-section">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about-section">About Me</a></li>
+            <li><a href="#education-section">Education</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#contacts-section">Contact</a></li>
         </ul>
     </nav>
     <section id="welcome-section" class="section">
@@ -23,7 +23,7 @@
             <h1 id="name" class="title" >Christian Poon</h1>
         </header>
     </section>
-    <section id="about" class="section">
+    <section id="about-section" class="section">
         <header>
             <h2 id="about-title" class="title">About Me</h2>
         </header>
@@ -32,38 +32,48 @@
                 <img id="about_img" src="imgs/aboutme.jpg" alt="graduation photo">
             </div>
             <div id="about-description-container" class="text-container">
-                <p id="about-description">I am a college graduate at the University of California, Irvine with a Bachelors of Science in Computer Science, specialization in Information. I started off my career in database administration and am now looking to make the switch into full stack web development, specifically looking to further my knowledge and experience in the MERN stack through project-based work. I am willing to put in the time to solve any problem that comes my way, and to exhibit teamwork in order to efficiently achieve a common goal. My hobbies include playing piano, golf, urban dancing, and learning Chinese (Cantonese and Mandarin)</p>
+                <p id="about-description">I am an alumni at the University of California, Irvine with a Bachelor of Science in Computer Science, specialization in Information. I started off my career in database administration and am now looking to make the switch into full stack web development, specifically looking to further my knowledge and experience in the MERN stack through project-based work. I am willing to put in the time to solve any problem that comes my way, and to exhibit teamwork in order to efficiently achieve a common goal. My hobbies include playing piano, golf, basketball, urban dancing, and learning Chinese (Cantonese and Mandarin)</p>
             </div>
         </div>
     </section>
-    <section id="education" class="section">
+    <section id="education-section" class="section">
         <header>
-            <h2 class="title">Education</h2>
-            
+            <h2 id="education-title" class="title">Education</h2>
         </header>
+        <div id="uci-img-container" class="img-container">
+            <img id="uci1-img" src="imgs/uci1.png" alt="UCI Img #1">
+        </div>
+        <div id="school-info-container" class="text-container">
+            <h3 class="school-header">University:</h3>
+            <p class="school-detail">University of California, Irvine</p>
+            <h3 class="school-header">Major:</h3>
+            <p class="school-detail">Computer Science, Specialization in Information</p>
+            <h3 class="school-header">Honors</h3>
+            <p class="school-detail">Deans Honor List</p>
+        </div>
     </section>
-    <section id="projects" class="section">
+    <section id="projects-section" class="section">
         <header>
-            <h2 class="title">Projects</h2>
+            <h2 id="projects-title" class="title">Projects</h2>
         </header>
         <div class="project-grid">
-            <a href="#" target="_blank" class="project project-tile">
-                <img src="" alt="tribute page">
-                <p>Tribute Page</p>
+            <a href="https://poonchristian.github.io/Tribute-Page/" target="_blank" class="project project-tile">
+                <img class="project-img" src="imgs/tributepage.png" alt="tribute page">
+                <p class="project-name">Tribute Page</p>
             </a>
-            <a href="#" target="_blank" class="project project-tile">
-                <img src="" alt="Rap Lyric Generator">
-                <p>Rap Lyric Generator</p>
+            <a href="https://poonchristian.github.io/Technical-Documenation/" target="_blank" class="project project-tile">
+                <img class="project-img" src="imgs/technicaldocumentation.png" alt="technical documentation">
+                <p class="project-name">Technical Documentation</p>
             </a>
-            <a href="#" target="_blank" class="project project-tile">
-                <img src="" alt="YelpCamp">
-                <p>YelpCamp</p>
+            <a href="https://github.com/pajose/Kendrick-Lamar-AI" target="_blank" class="project project-tile">
+                <img class="project-img" src="imgs/kendricklamar.jpg" alt="Rap Lyric Generator">
+                <p class="project-name">Rap Lyric Generator</p>
             </a>
         </div>
     </section>
-    <section id="contact" class="section">
+    <footer id="contacts-section" class="section">
         <header>
-            <h2 class="title">Contact Me!</h2>
+            <h2 id="contacts-title" class="title">Contact Me!</h2>
         </header>
         <div id="contacts-links">
             <ul>
@@ -72,9 +82,6 @@
                 <li><a class="contactBtn" href="https://www.linkedin.com/in/ctpoon921" target="_blank">LinkedIn</a></li>
             </ul>
         </div>
-    </section>
-    <footer>
-        <p>Copyright &copy; 2020 Christian Poon</p>
     </footer>
 </body>
 </html>
