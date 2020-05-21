@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -8,7 +12,7 @@ body {
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 50px;
+    height: 3rem;
     background-color: black;
 }
 
@@ -19,13 +23,19 @@ body {
 }
 
 #navbar li {
-    padding-right: 3em;
+    padding-right: 3rem;
 }
 
-#navbar li a {
+#navbar a {
     text-decoration: none;
     color: white;
 }
+
+.active {
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+}
+
 
 .section {
     display: flex;
@@ -118,7 +128,8 @@ body {
     grid-template-columns: repeat(3, minmax(300px, 1fr));
     justify-items: center;
     word-wrap: break-word;
-    margin-bottom: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .project-tile {
@@ -215,5 +226,11 @@ body {
         margin-bottom: 20px;
         padding: 0 20px;
         
+    }
+}
+
+@media (max-width: 620px) {
+    #navbar li {
+        padding-right: 1.4rem;
     }
 }
