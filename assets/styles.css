@@ -1,3 +1,4 @@
+/* General Page Styling */
 html {
     scroll-behavior: smooth;
 }
@@ -8,34 +9,17 @@ body {
     font-family: 'Roboto Slab'
 }
 
-#navbar {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 3rem;
-    background-color: black;
-}
-
-#navbar ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
-}
-
-#navbar li {
-    padding-right: 3rem;
-}
-
-#navbar a {
-    text-decoration: none;
-    color: white;
-}
-
+/* Active Section Navbar Styling */
 .active {
     border-bottom: 2px solid white;
     padding-bottom: 3px;
 }
 
+/* General Section Styling */
+.title {
+    font-size: 3em;
+    flex: 1 0 100%;
+}
 
 .section {
     display: flex;
@@ -43,75 +27,14 @@ body {
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+    padding-bottom: 40px;
 }
 
-#welcome-section {
-    height: 100vh;
-    background-image: url("../imgs/welcome.jpg");
-    background-attachment: fixed;
-    background-position: center bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
+.section:nth-child(2n + 3) {
+    background-color: rgba(178, 178, 178, 0.1);
 }
 
-#greeting {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.title {
-    font-size: 3em;
-    flex: 1 0 100%;
-}
-
-#name {
-    margin-top: 10px;
-}
-
-#about-blurb {
-    display: flex;
-    margin: 15px;
-    padding: 0 45px 0 40px;
-}
-
-#about-img-container {
-    width: 500px;
-    max-height: 400px;
-    flex: 1 0 50%;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-#about_img {
-    display: inline-block;
-    max-width: 100%;
-    max-height: 400px;
-    vertical-align: middle;
-}
-
-#about-description {
-    line-height: 2.2;
-    flex: 1 0 50%;
-    margin: 0;
-    margin-left: 10px;
-    text-align: left;
-}
-
-.img-container {
-    display: flex;
-    justify-content: center;
-}
-
-#uci-img-container {
-    flex: 1 0 100%;
-}
-
-#uci1-img {
-    width: 200px;
-    height: auto
-}
-
+/* Education Section Text Styling */
 .school-header {
     font-size: 1.7em;
     margin: 13.5px 0;
@@ -119,9 +42,15 @@ body {
 
 .school-detail {
     font-size: 1.1em;
-    margin: 13.5px 0;
 }
 
+/* General Image Styling */
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Projects Section Styling */
 .project-grid {
     flex: 1 0 100%;
     display: grid;
@@ -147,7 +76,7 @@ body {
 }
 
 .project-name {
-    background-color: gray;
+    background-color: #7B7D83;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -161,8 +90,111 @@ body {
     vertical-align: bottom;
 }
 
+
+/* Contact Button Styling */ 
+.contactBtn {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    transition: transform .5s;
+}
+
+.contactBtn:hover {
+    transform: scale(1.25);
+}
+
+.icon {
+    padding-right: 5px;
+}
+
+/* Navbar Styling */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 3rem;
+    background-color: black;
+    z-index: 1;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+#navbar li {
+    padding-right: 3rem;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Welcome Section Styling */
+#welcome-section {
+    height: 100vh;
+    background-image: url("../imgs/welcome.jpg");
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#greeting {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#name {
+    margin-top: 10px;
+}
+
+/* About Section Styling */
+#about-blurb {
+    display: flex;
+    margin: 15px;
+    padding: 0 45px 0 40px;
+}
+
+#about-img-container {
+    width: 500px;
+    max-height: 400px;
+    flex: 1 0 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#about-img {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 400px;
+    vertical-align: middle;
+}
+
+#about-description {
+    line-height: 2.2;
+    flex: 1 0 50%;
+    margin: 0;
+    margin-left: 10px;
+    text-align: left;
+}
+
+/* Education Section Image Styling */
+#uci-img-container {
+    flex: 1 0 100%;
+}
+
+#uci1-img {
+    width: 200px;
+    height: auto
+}
+
+/* Contacts Section Styling */
 #contacts-section {
-    background-color: gray;
+    background-color: rgba(178, 178, 178, 0.2);;
     height: 100vh;
     flex-direction: column;
 }
@@ -178,16 +210,7 @@ body {
     width: 100vw;
 }
 
-.contactBtn {
-    font-size: 2rem;
-    text-decoration: none;
-    color: white;
-}
-
-.icon {
-    padding-right: 5px;
-}
-
+/* Media Queries for Responsiveness */
 @media (max-width: 1140px) {
     #about-description {
         line-height: 1.5;
@@ -195,6 +218,10 @@ body {
 }
 
 @media (max-width: 961px) {
+    .project-grid {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, minmax(300px, 1fr));
+    }
     #about-blurb {
         flex-wrap: wrap;
     }
@@ -208,11 +235,6 @@ body {
         margin: 0;
         margin-top: 15px;
     }
-
-    .project-grid {
-        grid-template-columns: none;
-        grid-template-rows: repeat(3, minmax(300px, 1fr));
-    }
 }
 
 @media (max-width: 715px) {
@@ -225,12 +247,19 @@ body {
         height: 100%;
         margin-bottom: 20px;
         padding: 0 20px;
-        
     }
 }
 
 @media (max-width: 620px) {
+    .contactBtn:hover {
+        transform: scale(1.1);
+    }
+
     #navbar li {
         padding-right: 1.4rem;
+    }
+
+    #about-blurb {
+        max-width: 90%;
     }
 }
