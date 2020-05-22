@@ -134,6 +134,8 @@ body {
 
 /* Welcome Section Styling */
 #welcome-section {
+    margin: 0;
+    padding: 0;
     height: 100vh;
     background-image: url("../imgs/welcome.jpg");
     background-attachment: fixed;
