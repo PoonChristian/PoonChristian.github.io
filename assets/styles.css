@@ -121,10 +121,12 @@ body {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
+    margin-left: 0;
 }
 
 #navbar li {
-    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-right: 1rem;
 }
 
 #navbar a {
@@ -143,6 +145,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    overflow: hidden;
 }
 
 #greeting {
@@ -157,8 +160,8 @@ body {
 /* About Section Styling */
 #about-blurb {
     display: flex;
-    margin: 15px;
-    padding: 0 45px 0 40px;
+    margin: 0 45px 0 40px;
+    padding: 15px
 }
 
 #about-img-container {
@@ -224,6 +227,7 @@ body {
         grid-template-columns: none;
         grid-template-rows: repeat(3, minmax(300px, 1fr));
     }
+
     #about-blurb {
         flex-wrap: wrap;
     }
@@ -258,10 +262,179 @@ body {
     }
 
     #navbar li {
-        padding-right: 1.4rem;
+        padding-left: 1rem;
     }
 
     #about-blurb {
         max-width: 90%;
     }
+}
+  
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+  
+@media (min-width: 1025px) and (max-width: 1280px) {
+    #about-img, #uci1-img {
+        align-self: center;
+    }
+    
+    #about-description {
+        line-height: 1.5;
+    }
+}
+  
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    #about-img, #uci1-img {
+        align-self: center;
+    }
+
+    .project-grid {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, minmax(300px, 1fr));
+    }
+
+    #about-blurb {
+        flex-wrap: wrap;
+    }
+
+    #about-img-container {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    #about-description {
+        margin: 0;
+        margin-top: 15px;
+    }
+}
+  
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+*/
+  
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #about-img, #uci1-img {
+        align-self: center;
+    }
+
+    .project-grid {
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, minmax(300px, 1fr));
+    }
+
+    #about-blurb {
+        flex-wrap: wrap;
+    }
+
+    #about-img-container {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    #about-description {
+        margin: 0;
+        margin-top: 15px;
+    }
+}
+  
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+  
+@media (min-width: 481px) and (max-width: 767px) {
+    #about-img, #uci1-img {
+        align-self: center;
+    }
+
+    #about-description-container {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+    #about-img-container {
+        height: 100%;
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+
+    .contactBtn:hover {
+        transform: scale(1.1);
+    }
+
+    #navbar li {
+        padding-left: 0.2rem;
+    }
+
+    #about-blurb {
+        max-width: 90%;
+    }
+
+    .contactBtn:hover {
+        transform: scale(1.1);
+    }
+
+    #navbar li {
+        padding-left: 1rem;
+    }
+
+    #about-blurb {
+        max-width: 90%;
+    }
+}
+  
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+  
+@media (min-width: 320px) and (max-width: 480px) { 
+    #navbar li {
+        font-size: 0.84rem;
+        margin-right: 1rem; 
+        padding: 0;
+    }
+
+    #about-img, #uci1-img {
+        align-self: center;
+    }
+
+    #school-info-container {
+        margin: 0 4px;
+    }
+
+    #contacts-title {
+        font-size: 3rem;
+    }
+    
+    #contacts-links {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        width: 100vw;
+    }
+
+    .contactBtn {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+        transition: transform .5s;
+    }
+    
+    .contactBtn:hover {
+        transform: scale(1.25);
+    }
+    
+    .icon {
+        padding-right: 5px;
+    }
+    
 }
