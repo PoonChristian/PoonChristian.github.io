@@ -6,7 +6,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Slab'
+    font-family: 'Roboto Slab';
 }
 
 /* Active Section Navbar Styling */
@@ -32,6 +32,27 @@ body {
 
 .section:nth-child(2n + 3) {
     background-color: rgba(178, 178, 178, 0.1);
+}
+
+.youtube-link {
+    text-decoration: none;
+}
+
+.youtube-link:link {
+    color: #c00;
+}
+
+.youtube-link:visited {
+    color: #0c0;
+}
+
+.youtube-link:hover,
+.youtube-link:focus {
+    color: #00c;
+}
+
+.youtube-link:active {
+    color: #ccc;
 }
 
 /* Education Section Text Styling */
@@ -68,7 +89,7 @@ body {
     width: 325px;
     text-decoration: none;
     color: white;
-    transition: transform .5s;
+    transition: transform 0.5s;
 }
 
 .project-tile:hover {
@@ -76,7 +97,7 @@ body {
 }
 
 .project-name {
-    background-color: #7B7D83;
+    background-color: #7b7d83;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -90,13 +111,12 @@ body {
     vertical-align: bottom;
 }
 
-
-/* Contact Button Styling */ 
+/* Contact Button Styling */
 .contactBtn {
     font-size: 2rem;
     text-decoration: none;
     color: black;
-    transition: transform .5s;
+    transition: transform 0.5s;
 }
 
 .contactBtn:hover {
@@ -139,7 +159,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url("../imgs/welcome.jpg");
+    background-image: url('../imgs/welcome.jpg');
     background-attachment: fixed;
     background-position: center bottom;
     background-size: cover;
@@ -161,7 +181,7 @@ body {
 #about-blurb {
     display: flex;
     margin: 0 45px 0 40px;
-    padding: 15px
+    padding: 15px;
 }
 
 #about-img-container {
@@ -194,12 +214,12 @@ body {
 
 #uci1-img {
     width: 200px;
-    height: auto
+    height: auto;
 }
 
 /* Contacts Section Styling */
 #contacts-section {
-    background-color: rgba(178, 178, 178, 0.2);;
+    background-color: rgba(178, 178, 178, 0.2);
     height: 100vh;
     flex-direction: column;
 }
@@ -269,29 +289,31 @@ body {
         max-width: 90%;
     }
 }
-  
+
 /* 
 ##Device = Laptops, Desktops
 ##Screen = B/w 1025px to 1280px
 */
-  
+
 @media (min-width: 1025px) and (max-width: 1280px) {
-    #about-img, #uci1-img {
+    #about-img,
+    #uci1-img {
         align-self: center;
     }
-    
+
     #about-description {
         line-height: 1.5;
     }
 }
-  
+
 /* 
 ##Device = Tablets, Ipads (portrait)
 ##Screen = B/w 768px to 1024px
 */
-  
+
 @media (min-width: 768px) and (max-width: 1024px) {
-    #about-img, #uci1-img {
+    #about-img,
+    #uci1-img {
         align-self: center;
     }
 
@@ -314,14 +336,15 @@ body {
         margin-top: 15px;
     }
 }
-  
+
 /* 
 ##Device = Tablets, Ipads (landscape)
 ##Screen = B/w 768px to 1024px
 */
-  
+
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    #about-img, #uci1-img {
+    #about-img,
+    #uci1-img {
         align-self: center;
     }
 
@@ -344,14 +367,15 @@ body {
         margin-top: 15px;
     }
 }
-  
+
 /* 
 ##Device = Low Resolution Tablets, Mobiles (Landscape)
 ##Screen = B/w 481px to 767px
 */
-  
+
 @media (min-width: 481px) and (max-width: 767px) {
-    #about-img, #uci1-img {
+    #about-img,
+    #uci1-img {
         align-self: center;
     }
 
@@ -390,20 +414,21 @@ body {
         max-width: 90%;
     }
 }
-  
+
 /* 
 ##Device = Most of the Smartphones Mobiles (Portrait)
 ##Screen = B/w 320px to 479px
 */
-  
-@media (min-width: 320px) and (max-width: 480px) { 
+
+@media (min-width: 320px) and (max-width: 480px) {
     #navbar li {
         font-size: 0.84rem;
-        margin-right: 1rem; 
+        margin-right: 1rem;
         padding: 0;
     }
 
-    #about-img, #uci1-img {
+    #about-img,
+    #uci1-img {
         align-self: center;
     }
 
@@ -414,7 +439,7 @@ body {
     #contacts-title {
         font-size: 3rem;
     }
-    
+
     #contacts-links {
         display: flex;
         list-style-type: none;
@@ -426,15 +451,14 @@ body {
         font-size: 1.5rem;
         text-decoration: none;
         color: black;
-        transition: transform .5s;
+        transition: transform 0.5s;
     }
-    
+
     .contactBtn:hover {
         transform: scale(1.25);
     }
-    
+
     .icon {
         padding-right: 5px;
     }
-    
 }
